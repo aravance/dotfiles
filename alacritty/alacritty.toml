@@ -1,0 +1,32 @@
+[font]
+size = 14.0
+normal.family = "Fira Code"
+
+[window]
+decorations = "none"
+opacity = 0.9
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[colors]
+# https://github.com/bluz71/vim-moonfly-colors
+primary.background = "#080808"
+primary.foreground = "#bdbdbd"
+normal.black = "#323437"
+normal.red = "#ff5454"
+normal.green = "#8cc85f"
+normal.yellow = "#e3c78a"
+normal.blue = "#80a0ff"
+normal.magenta = "#cf87e8"
+normal.cyan = "#79dac8"
+normal.white = "#c6c6c6"
+bright.black = "#949494"
+bright.red = "#ff5189"
+bright.green = "#36c692"
+bright.yellow = "#c2c292"
+bright.blue = "#74b2ff"
+bright.magenta = "#ae81ff"
+bright.cyan = "#85dc85"
+bright.white = "#e4e4e4"
