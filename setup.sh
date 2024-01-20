@@ -2,8 +2,8 @@
 
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
-local dirs=(hypr waybar tmux git)
+dirs=(hypr waybar tmux git)
 
-for d in $dirs;do
-  ln -s "${SCRIPT_DIR}/$d" ~/.config
+for d in "${dirs[@]}";do
+  ln -s "${SCRIPT_DIR}/$d" ~/.config 2>/dev/null
 done
