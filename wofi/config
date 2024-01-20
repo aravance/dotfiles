@@ -1,0 +1,5 @@
+mode=drun
+allow_images=true
+width=800px
+lines=10
+prompt=Choose an application
