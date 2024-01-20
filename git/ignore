@@ -1,0 +1,58 @@
+# Compiled files #
+##################
+*.class
+*.dex
+*.exe
+*.apk
+*.dll
+*.o
+*.so
+*.a
+build
+test-runtime
+
+# Archives #
+############
+*.img
+*.dmg
+*.iso
+*.zip
+*.7z
+*.gz
+*.tar
+*.rar
+*.jar
+*.war
+
+# Logs and databases #
+######################
+*.log
+*.db
+
+# Backup files #
+################
+*~
+*.bac
+*.bak
+.*.swp
+
+# OS files #
+############
+.directory
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# IDE Files #
+#############
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.iws
+xcuserdata/

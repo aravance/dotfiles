@@ -1,0 +1,46 @@
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = green bold
+  changed = yellow bold
+  untracked = red bold
+[alias]
+  co = checkout
+  ci = commit
+  st = status --short --branch
+  br = branch
+  cp = cherry-pick
+  pop = stash pop
+  hist = log --pretty=format:\"%C(green)%h %C(yellow)%ad%Creset | %C(bold)%s%C(bold)%C(blue)%d%C(reset) [%C(cyan)%aN%Creset]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  sm = submodule
+  smpull = submodule foreach git pull origin master
+  smpush = submodule foreach git push origin
+  smst = submodule status
+  d = difftool
+  dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+[merge]
+  tool = vimdiff
+[push]
+  default = current
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[branch]
+  autosetuprebase = always
+[rebase]
+  autoStash = true
+[user]
+	name = Alex Avance
+	email = aravance@gmail.com
