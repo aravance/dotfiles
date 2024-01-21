@@ -71,16 +71,26 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
+    "wireplumber": {
+        "scroll-step": 2,
+        "max-volume": 100,
+        "format": "{volume}% {icon}",
+        "format-muted": " ",
+        "on-click": "pavucontrol",
+        "format-icons": ["","",""],
+        "on-click-right": "helvum"
+    },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 2,
+        "max-volume": 100,
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
+        "format-source": "",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
+            "headphones": "",
             "hands-free": "",
             "headset": "",
             "phone": "",
@@ -88,7 +98,8 @@
             "car": "",
             "default": ["","",""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "on-click-right": "helvum"
     },
     "custom/media": {
         "format": "{icon} {}",
