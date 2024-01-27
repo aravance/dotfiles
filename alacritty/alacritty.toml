@@ -2,7 +2,8 @@
 size = 14.0
 
 [font.normal]
-family = "Fira Code"
+family = "FiraCode Nerd Font"
+style = "Retina"
 
 [window]
 decorations = "none"
