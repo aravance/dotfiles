@@ -9,6 +9,9 @@ style = "Retina"
 decorations = "none"
 opacity = 0.9
 
+[env]
+TERM = "xterm-256color"
+
 [scrolling]
 history = 10000
 multiplier = 3
