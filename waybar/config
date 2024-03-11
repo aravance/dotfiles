@@ -6,7 +6,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "custom/media"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "memory", "cpu", "temperature", "clock", "tray"],
+    "modules-right": ["idle_inhibitor", "pulseaudio", "memory", "cpu", "temperature", "gamemode", "clock", "tray"],
     // Modules configuration
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -61,6 +61,18 @@
         "critical-threshold": 80,
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
+    },
+    "gamemode": {
+      "format": "{glyph}",
+      "format-alt": "{glyph} {count}",
+      "glyph": "",
+      "hide-not-running": true,
+      "use-icon": true,
+      "icon-name": "input-gaming-symbolic",
+      "icon-spacing": 4,
+      "icon-size": 20,
+      "tooltip": true,
+      "tooltip-format": "Games running: {count}"
     },
     "wireplumber": {
         "scroll-step": 2,
