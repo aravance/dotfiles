@@ -74,6 +74,7 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-power,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -172,6 +173,11 @@ label:focus {
 
 #wireplumber.muted {
     background-color: #f53c3c;
+}
+
+#custom-power {
+    background-color: #111111;
+    padding: 4px 8px;
 }
 
 #custom-media {
