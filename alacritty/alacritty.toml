@@ -1,4 +1,4 @@
-import = [
+general.import = [
   "~/.config/alacritty/moonfly.toml",
   "~/.config/alacritty/local.toml",
 ]
