@@ -2,7 +2,7 @@
 
 entries="⏻ Shutdown\n⭮ Reboot\n⇠ Logout\n⏾ Suspend"
 
-selected=$(echo -e $entries | wofi -W 350 -L 4 -p "" -i --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
+selected=$(echo -e $entries | wofi -W 350 -L 4 -p "" -D single_click=true -i --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
 
 case $selected in
   shutdown)
