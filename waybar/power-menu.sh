@@ -10,7 +10,7 @@ case $selected in
   reboot)
     exec systemctl reboot;;
   logout)
-    swaymsg exit;;
+    hyprctl dispatch exit;;
   suspend)
     exec systemctl suspend;;
 esac
