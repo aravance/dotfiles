@@ -117,7 +117,7 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format": "",
+        "format": "⏻",
         "on-click": "$HOME/.config/waybar/power-menu.sh"
     }
 }

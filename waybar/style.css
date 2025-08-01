@@ -177,7 +177,8 @@ label:focus {
 
 #custom-power {
     background-color: #111111;
-    padding: 4px 8px;
+    padding: 0px 8px;
+    font-size: 30px;
 }
 
 #custom-media {
