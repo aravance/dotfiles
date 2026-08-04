@@ -56,3 +56,5 @@ ehthumbs.db
 *.iml
 *.iws
 xcuserdata/
+
+**/.claude/settings.local.json
