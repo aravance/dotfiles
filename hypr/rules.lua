@@ -24,12 +24,20 @@ hl.window_rule({ match = { title = "^Beyond All Reason$" }, workspace = "2" })
 hl.window_rule({ match = { title = "^Beyond All Reason$" }, fullscreen = true })
 
 hl.window_rule({ match = { class = "^com-evacipated-cardcrawl-modthespire-Loader$" }, workspace = "2" })
-hl.window_rule({ match = { title = "^Modded Slay the Spire$" }, workspace = "2" })
+hl.window_rule({ match = { title = "^Modded Slay the Spire$" }, workspace = "2", fullscreen = true })
 hl.window_rule({ match = { class = "^Slay the Spire 2$" }, workspace = "2" })
 hl.on("window.open", function(w)
-    if w.class == "Slay the Spire 2" then
-        hl.dispatch(hl.dsp.layout("swapwithmaster master"))
-    end
+  hl.notification.create({
+    text = "class: " .. w.class .. ", title: " .. w.title .. ", initial_class: " .. w.initial_class,
+    timeout = 3000,
+  })
+  local classes = {
+    ["Slay the Spire 2"] = true,
+    ["Baba Is You"] = true,
+  }
+  if classes[w.class] then
+    hl.dispatch(hl.dsp.layout("swapwithmaster master"))
+  end
 end)
 
 hl.window_rule({ match = { class = "discord" }, workspace = "3" })
