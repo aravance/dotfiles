@@ -16,7 +16,7 @@ case $selected in
   reboot)
     exec systemctl reboot;;
   logout)
-    hyprctl dispatch exit;;
+    exec loginctl terminate-session self;;
   suspend)
     exec systemctl suspend;;
 esac
